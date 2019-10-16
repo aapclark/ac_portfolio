@@ -13,7 +13,7 @@ function Image() {
         display: 'flex',
         borderRadius: '100%',
         maxWidth: '20rem',
-        marginTop: '2rem',
+        paddingTop: '2rem',
         marginBottom: '2rem',
         marginLeft: 'auto',
         marginRight: 'auto',

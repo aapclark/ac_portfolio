@@ -15,36 +15,40 @@ import Header from './components/Header';
 import Contact from './components/Contact';
 import Work from './components/Work';
 import About from './components/About';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <Router>
-      <Container>
-        <Col sm={{ size: 8, order: 2, offset: 2 }}>
-          <Image />
-        </Col>
-        <Col sm={{ size: 8, order: 2, offset: 2 }}>
-          <Header />
-        </Col>
+    <div style={{ backgroundColor: '#f5f5f5', minHeight: '100vh', marginBottom: '-10rem' }}>
+      <Router>
         <Container>
-          <Row>
-            <Col sm={{ size: 8, order: 2, offset: 2 }}>
-              <Switch>
-                <Route path='/work'>
-                  <Work />
-                </Route>
-                <Route path='/about'>
-                  <About />
-                </Route>
-                <Route path='/contact'>
-                  <Contact />
-                </Route>
-              </Switch>
-            </Col>
-          </Row>
+          <Col sm={{ size: 8, order: 2, offset: 2 }}>
+            <Image />
+          </Col>
+          <Col sm={{ size: 8, order: 2, offset: 2 }}>
+            <Header />
+          </Col>
+          <Container>
+            <Row>
+              <Col sm={{ size: 8, order: 2, offset: 2 }}>
+                <Switch>
+                  <Route path='/work'>
+                    <Work />
+                  </Route>
+                  <Route path='/about'>
+                    <About />
+                  </Route>
+                  <Route path='/contact'>
+                    <Contact />
+                  </Route>
+                </Switch>
+              </Col>
+            </Row>
+          </Container>
+          <Footer />
         </Container>
-      </Container>
-    </Router>
+      </Router>
+    </div>
   );
 }
 
