@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar, NavLink, Container, Row, Col } from 'shards-react';
+import { Navbar, Container, Row, Col } from 'shards-react';
 
 const Header = () => {
 
@@ -17,7 +17,9 @@ const Header = () => {
       <Navbar>
         <Link to='/work'>Work</Link>
         <Link to='/about'>About</Link>
-        <Link to='/contact'>Contact</Link>
+        <Link to={{ pathname: 'mailto:aaronpclark@protonmail.com' }}>
+          Contact
+                  </Link>
       </Navbar>
     </>
   )
