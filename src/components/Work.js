@@ -23,11 +23,17 @@ const Work = () => {
     margin: '1rem auto'
   }
 
+  const headerStyle = {
+    textAlign: 'center',
+    margin: '1rem'
+  }
+
 
 
   return (
     <>
       <Container >
+        <h2 style={headerStyle}>Assorted Projects</h2>
         <Row>
           <Col xs={12}>
             <Card style={cardStyle}>

@@ -1,8 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Navbar, Container, Row, Col } from 'shards-react';
 
 const Header = () => {
+  const navLinkStyle = {
+    fontSize: '1.33rem'
+  }
 
   return (
     <>
@@ -15,11 +18,9 @@ const Header = () => {
         </Row>
       </Container>
       <Navbar>
-        <Link to='/work'>Work</Link>
-        <Link to='/about'>About</Link>
-        <Link to={{ pathname: 'mailto:aaronpclark@protonmail.com' }}>
-          Contact
-                  </Link>
+        <NavLink style={navLinkStyle} to='/work'>Work</NavLink>
+        <NavLink style={navLinkStyle} to='/about'>About</NavLink>
+        <NavLink style={navLinkStyle} to='/contact'>Contact</NavLink>
       </Navbar>
     </>
   )
