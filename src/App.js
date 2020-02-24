@@ -13,6 +13,7 @@ import "./images/profileimg.jpg"
 import Image from './components/Image'
 import Header from './components/Header';
 import Work from './components/Work';
+import Contact from './components/Contact'
 import About from './components/About';
 import Footer from './components/Footer';
 
@@ -36,6 +37,9 @@ function App() {
                   </Route>
                   <Route path='/about'>
                     <About />
+                  </Route>
+                  <Route path='/contact'>
+                    <Contact />
                   </Route>
                 </Switch>
               </Col>
