@@ -3,6 +3,9 @@ import { NavLink } from 'react-router-dom';
 import { Navbar, Container, Row, Col } from 'shards-react';
 
 const Header = () => {
+  const navLinkStyle = {
+    fontSize: '1.33rem'
+  }
 
   return (
     <>
@@ -15,9 +18,9 @@ const Header = () => {
         </Row>
       </Container>
       <Navbar>
-        <NavLink to='/work'>Work</NavLink>
-        <NavLink to='/about'>About</NavLink>
-        <NavLink to='/contact'>Contact</NavLink>
+        <NavLink style={navLinkStyle} to='/work'>Work</NavLink>
+        <NavLink style={navLinkStyle} to='/about'>About</NavLink>
+        <NavLink style={navLinkStyle} to='/contact'>Contact</NavLink>
       </Navbar>
     </>
   )
