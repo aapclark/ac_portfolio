@@ -114,8 +114,7 @@ const Work = () => {
               <CardTitle style={cardTitleStyle}>NASA Photo of the Day</CardTitle>
               <CardBody>
                 <h5>App Features</h5>
-                <p>Site build using React and TailwindCSS
-    Used Axios to retrieve images from NASA APOD.</p>
+                <p>Site build using React and TailwindCSS that uses Axios to retrieve images from NASA photo of the day API.</p>
                 <div style={buttonContainer}>
                   <Button theme='info' href="https://github.com/aapclark/nasa-photo-of-the-day" style={cardButtonStyle} >GitHub</Button>
                 </div>
