@@ -50,7 +50,7 @@ const Work = () => {
                   <li><p>Documentation written with consideration of new users of tech stack.</p></li>
                 </ul>
                 <h5>Libraries and Frameworks Used</h5>
-                <p>Apollo Server, Prisma, Jest, Babel, Docker, </p>
+                <p>Apollo Server, Prisma, Jest, Babel, Docker, Python3</p>
                 <div style={buttonContainer}>
                   <Button theme='info' href="https://github.com/aapclark/apollo_prisma_docker" style={cardButtonStyle}>GitHub</Button>
                 </div>
