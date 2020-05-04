@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Col, Row, Card, CardBody, CardTitle, ListGroup, ListGroupItem, Button } from 'shards-react';
+import { Container, Col, Row, Card, CardBody, CardTitle, Button, ListGroup, ListGroupItem } from 'shards-react';
 
 const Work = () => {
   const cardStyle = {
@@ -35,6 +35,28 @@ const Work = () => {
       <Container >
         <h2 style={headerStyle}>Assorted Projects</h2>
         <Row>
+          <Col xs={12}>
+            <Card style={cardStyle}>
+              <CardTitle style={cardTitleStyle}>Apollo+Prisma in Docker</CardTitle>
+              <CardBody >
+                <p>Fully-featured boilerplate for quickly developing a backend with Apollo, Prisma 1, Jest, Postgres inside a single Docker container.</p>
+                <h5>Features</h5>
+                <ul>
+                  <li><p>Apollo, Prisma, and Postgres services exist in single Docker container with separate testing environment.</p></li>
+                  <li><p>Python script for quickly loads ENV files. </p></li>
+                  <li><p>Jest executes unit tests.</p></li>
+                  <li><p>Various NPM scripts enable flexibility with running Apollo service inside or outside of container.</p></li>
+                  <li><p>Babel configuration for ES6 syntax.</p></li>
+                  <li><p>Documentation written with consideration of new users of tech stack.</p></li>
+                </ul>
+                <h5>Libraries and Frameworks Used</h5>
+                <p>Apollo Server, Prisma, Jest, Babel, Docker, </p>
+                <div style={buttonContainer}>
+                  <Button theme='info' href="https://github.com/aapclark/apollo_prisma_docker" style={cardButtonStyle}>GitHub</Button>
+                </div>
+              </CardBody>
+            </Card>
+          </Col>
           <Col xs={12}>
             <Card style={cardStyle}>
               <CardTitle style={cardTitleStyle}>QualityHub - ResumeQ</CardTitle>
